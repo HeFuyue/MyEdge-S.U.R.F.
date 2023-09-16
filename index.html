@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "./css/reset.css">
+    <link rel = "stylesheet" href = "./css/game-ui.css">
+</head>
+<body>
+    <canvas id = "game-canvas"></canvas>
+    <canvas id = "background-canvas"></canvas>
+    <canvas id = "player-canvas"></canvas>
+    <div id = "game-ui">
+        <div id = 'info'>
+            <div id = 'heart'>
+                <div class = "solid-heart"></div>
+                <div class = "solid-heart"></div>
+                <div class = "solid-heart"></div>
+            </div>
+            <div id = 'scoreinfo'>★&nbsp;<p id = 'score'>0</p>&nbsp;米</div>
+            <div id = 'flash'>
+                <div class = "empty-flash"></div>
+                <div class = "empty-flash"></div>
+                <div class = "empty-flash"></div>
+            </div>
+        </div>
+        <div id = "setting">
+            <div id = 'welcome'><span>让我们网上冲浪吧</span></div>
+            <div id = 'mode'>无尽模式</div>
+            <div id = 'start'><span>&nbsp;&nbsp;空格键&nbsp;&nbsp;</span>&nbsp;开始玩游戏</div>
+        </div>
+        <div id = "left-arrow">&lt;</div>
+        <div id = "right-arrow">&gt;</div>
+        <div id = "mask"></div>
+    </div>
+    <script type = "module" src = "./js/canvas-setting.js"></script>
+    <script type = "module" src = "./index.js"></script>
+    <script type = "module" src = "./js/state/index.js"></script>
+    <script type = "module" src = "./js/game-ui.js"></script>
+    <script type = "module" src = "./js/control/index.js"></script>
+    <script type = "module" src = "./js/event/index.js"></script>
+</body>
+</html>

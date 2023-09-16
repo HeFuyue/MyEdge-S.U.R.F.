@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#game-ui {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+}
+
+#game-canvas {
+    /* background: url('../assets/bg.png'); */
+    z-index: 99;
+}
+
+#background-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, #38c2ed, #35c5d1);
+    z-index: -1;
+}
+
+#player-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 199;
+}
